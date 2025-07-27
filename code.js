@@ -26,14 +26,14 @@ function validateForm(){
     if (fullName.length == 1 || fullName.length > 20){
         // the user gets notified of the error but does not get the secret message
 
-        divMessage.innerHTML = "Bitch!!! Your name isn't that fucking long!!! Try the fuck again!!!";
+        divMessage.innerHTML = "Name has too many charachters; Please try again";
 
     }
 
     // if the zip code is not exactly 5 digits long, give the user an error message
     else if (zipCode.length != 5){
 
-        divMessage.innerHTML = "Get the fuck outta here with that fake ass zip code!!! Try the fuck again!!!";
+        divMessage.innerHTML = "Zip code must be 5 digits; Please try again";
 
     }
 
@@ -41,7 +41,7 @@ function validateForm(){
     // give the user a secret message
     else{
         // the inputs validated successfully, so show the user a message
-        divMessage.innerHTML = "Congratulations," + fullName + "! You know your fucking name and zip code!!!";
+        divMessage.innerHTML = "Congratulations," + fullName + "! You know your name and zip code";
     }
 
     // this will prevent the form from trying to submit to server side code that we don't have in this class
