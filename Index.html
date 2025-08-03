@@ -32,32 +32,71 @@
 <body>
     <!-- Create a header section -->
      <header>
+
+         <!-- Add header text. There should 1 and only 1 h1 tag. -->
+    <h1>Welcome to my CSC102 page.</h1>
+
+    
+
         <!-- This is the navigation menu section -->
         <nav>
             <!-- The a tag is the anchor tag - it creates a hyperlink -->
-            <a href="Index.html" >Home</a> &nbsp;
+             <a href="Index.html" >Home</a> &nbsp;
+            <br>
             <a href="Boards.html">Boards</a> &nbsp;
+            <br>
             <a href="Dice Game.html">Dice Game</a> &nbsp;
+            <br>
+            <a href="Strings.html">Strings</a> &nbsp;
+            <br>
+            <a href="input_example.html">Input Example</a> &nbsp;
+            <br>
+            <a href="Event Practice.html">Event Practice</a> &nbsp;
+            <br>
         </nav>
      </header>
-    <!-- Add header text. There should 1 and only 1 h1 tag. -->
-    <h1>Welcome to my CSC102 page.</h1>
+   
+     <h2>Press "Let's Bounce!!! to make the meme bounce around the page.</h2>
+
+     <h2>Press "Halt!!!" to stop the meme in place.</h2>
+
+     <!-- this button will start the image moving -->
+     <button id="btnStart" onclick="startMove();">Let's Bounce!!!</button>
+     <br>
+     <br>
+      <!-- this button will stop the image moving -->
+     <button id="btnStop" onclick="stopMove();" disabled="true">Halt!!!</button>
+
 
     <!-- This is a paragraph, there will be spacing before and after the p tags by default -->
     <p>
         <img id="memeImage" src="Spaghetti Meme.jpg" alt="Meme Image">
     </p>
 
+    <script src="Index.js">
+        
+     </script>
 
     <!-- Add the footer to the bottom of the page -->
      <footer>
+        <br>
+        <br>
+        Bonus points if you can stop the meme in the center of the page!!!
+        <br>
+        <br>
+        
         <!-- <br> creates a new line -->
-        Daniel Gamble   <br>
-        University of Advancing Technology <br>
-        2625 W Baseline Rd. <br>
+        Daniel Gamble   
+        <br>
+        University of Advancing Technology 
+        <br>
+        2625 W Baseline Rd. 
+        <br>
         Tempe, AZ 85283
+        <br>
 
      </footer>
+     
     <!-- Make sure the closing body tag is at the bottom of the page -->
 </body>
 <!-- Closing html tag should be at the end of every file -->
