@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+
+     <!-- add a link to our css file -->
+     <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+ <!-- Create a header section -->
+     <header>
+
+         <!-- Add header text. There should 1 and only 1 h1 tag. -->
+    <h1>How many palindromes do you know?</h1>
+
+    
+
+        <!-- This is the navigation menu section -->
+        <nav>
+            <!-- The a tag is the anchor tag - it creates a hyperlink -->
+             <a href="Index.html" >Home</a> &nbsp;
+            <br>
+            <a href="Boards.html">Boards</a> &nbsp;
+            <br>
+            <a href="Dice Game.html">Dice Game</a> &nbsp;
+            <br>
+            <a href="Strings.html">Strings</a> &nbsp;
+            <br>
+            <a href="input_example.html">Input Example</a> &nbsp;
+            <br>
+            <a href="Event Practice.html">Event Practice</a> &nbsp;
+            <br>
+            <a href="Palindrome Checker.html">Palindrome Checker</a> &nbsp;
+            <br>
+        </nav>
+     </header>
+
+     <main>
+
+        <!-- basics of setting up the form so that when the form is submitted we will check if the word is the same forward and backwards -->
+        <form name="formPalindrome" id="formPalindrome" onsubmit ="checkPalindrome(event);">
+
+            <label for="txtWord">Enter a word or phrase: </label>
+            <br>
+            <br>
+            <input type="text" id="txtWord" name="txtWord">
+            <br>
+            <br>
+            <input type="submit" value="Check Word">
+            <br>
+            <br>
+
+        </form>
+
+        <div id="divPalinResults"></div>
+
+     </main>
+
+
+</body>
+
+<script src="Palindrome Checker.js">
+        
+     </script>
+
+<!-- Add the footer to the bottom of the page -->
+     <footer>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        
+        <!-- <br> creates a new line -->
+        Daniel Gamble   
+        <br>
+        University of Advancing Technology 
+        <br>
+        2625 W Baseline Rd. 
+        <br>
+        Tempe, AZ 85283
+        <br>
+
+     </footer>
+</html>
