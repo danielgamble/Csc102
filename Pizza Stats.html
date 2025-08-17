@@ -3,23 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Checker</title>
-
-     <!-- add a link to our css file -->
-     <link rel="stylesheet" href="main.css">
-
+    <title>Pizza Stats</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
- <!-- Create a header section -->
-     <header>
+    <header>
+        <h1>Pizza Chef Stats</h1>
 
-         <!-- Add header text. There should 1 and only 1 h1 tag. -->
-    <h1>How many palindromes do you know?</h1>
-
-    
-
-        <!-- This is the navigation menu section -->
+         <!-- This is the navigation menu section -->
         <nav>
             <!-- The a tag is the anchor tag - it creates a hyperlink -->
              <a href="Index.html" >Home</a> &nbsp;
@@ -41,33 +32,33 @@
             <a href="Pizza Stats.html">Pizza Stats</a> &nbsp;
             <br>
         </nav>
-     </header>
 
-     <main>
+    </header>
 
-        <!-- basics of setting up the form so that when the form is submitted we will check if the word is the same forward and backwards -->
-        <form name="formPalindrome" id="formPalindrome" onsubmit ="checkPalindrome(event);">
+    <main>
+        <h2>Pizza Chef Rankings</h2>
+        <h3>Total Pizzas</h3>
+        <div id="divTotalPizzas">0</div>
 
-            <label for="txtWord">Enter a word or phrase: </label>
-            <br>
-            <br>
-            <input type="text" id="txtWord" name="txtWord">
-            <br>
-            <br>
-            <input type="submit" value="Check Word">
-            <br>
-            <br>
+        <h3>Pizza Baker Level</h3>
+        <div id="divBakingLevel">Beginner</div>
 
-        </form>
+        <br>
+        <br>
 
-        <div id="divPalinResults"></div>
+        <label for="numPizzas">Enter Pizzas Baked</label>
+        <input type="number" id="numPizzas" name="numPizzas">
+        <button onclick="updateChefStats();">Update Stats</button>
 
-     </main>
+        <br>
+        <br>
+        <div id="divToppings"></div>
+    </main>
 
 
 </body>
 
-<script src="Palindrome Checker.js">
+<script src="Pizza Stats.js">
         
      </script>
 
