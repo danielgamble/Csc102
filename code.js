@@ -37,7 +37,7 @@ function validateForm(){
 
     }
 
-    // if we get to theis else statement, it means all of the inputs validated successfully!
+    // if we get to this else statement, it means all of the inputs validated successfully!
     // give the user a secret message
     else{
         // the inputs validated successfully, so show the user a message

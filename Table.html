@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Practice</title>
+    <title>Table</title>
 
- <link rel="stylesheet" href="main.css">
+    <!-- add a link to our css file -->
+     <link rel="stylesheet" href="main.css">
 
- <h1>Event Handling Practice</h1>
+</head>
+<body>
+    <header>
+        <h1>Costly Programming Mistakes</h1>
 
- <!-- This is the navigation menu section -->
+    <!-- This is the navigation menu section -->
         <nav>
             <!-- The a tag is the anchor tag - it creates a hyperlink -->
              <a href="Index.html" >Home</a> &nbsp;
@@ -30,32 +34,42 @@
             <br>
             <a href="Pizza Stats.html">Pizza Stats</a> &nbsp;
             <br>
-              <a href="Table.html">Table</a> &nbsp;
+             <a href="Table.html">Table</a> &nbsp;
             <br>
         </nav>
+        </header>
 
-</head>
+        <main>
 
+            <h2>Programming mistakes and costs</h2>
 
-<body>
-    
-  <main>
+            <table id="tblData">
+                <tr>
+                    <th>Project</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                    <th>Cause</th>
+                </tr>
+            </table>
 
-    <h2>Button click event handling</h2>
-    
-    <p>Generate some random numbers and check if they are even or odd</p>
-    
-    <button onclick="generateNums();">Generate</button>
+            <!-- this is an HTML table
+            <table>
+                tr is the table row
+                <tr>
+                    td is the column/cell/table data
+                    <td></td>
+                    <td><td>
+                </tr>
+            </table>
+        -->
 
-    <div id="divOutput"></div>
-
-  </main> 
-
+        
+        </main>
 </body>
 
-<script 
-src="Event Practice.js">
-</script>
+<script src="Table.js">
+        
+     </script>
 
 <!-- Add the footer to the bottom of the page -->
      <footer>
