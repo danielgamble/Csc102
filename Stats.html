@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
-
-    <!-- add a link to our css file -->
-     <link rel="stylesheet" href="main.css">
-
+    <title>Pizza Stats</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <h1>Costly Programming Mistakes</h1>
+        <h1>Pizza Chef Stats</h1>
 
-    <!-- This is the navigation menu section -->
+         <!-- This is the navigation menu section -->
         <nav>
             <!-- The a tag is the anchor tag - it creates a hyperlink -->
              <a href="Index.html" >Home</a> &nbsp;
@@ -34,40 +31,36 @@
             <br>
             <a href="Pizza Stats.html">Pizza Stats</a> &nbsp;
             <br>
-             <a href="Table.html">Table</a> &nbsp;
+              <a href="Table.html">Table</a> &nbsp;
             <br>
         </nav>
-        </header>
 
-        <main>
+    </header>
 
-            <h2>Programming mistakes and costs</h2>
+    <main>
+        <h2>Pizza Chef Rankings</h2>
+        <h3>Total Pizzas</h3>
+        <div id="divTotalPizzas">0</div>
 
-            <table id="tblData">
-                <tr>
-                    <th>Project</th>
-                    <th>Year</th>
-                    <th>Cost</th>
-                    <th>Cause</th>
-                </tr>
-            </table>
+        <h3>Pizza Baker Level</h3>
+        <div id="divBakingLevel">Beginner</div>
 
-            <!-- this is an HTML table
-            <table>
-                tr is the table row
-                <tr>
-                    td is the column/cell/table data
-                    <td></td>
-                    <td><td>
-                </tr>
-            </table>
-        -->
+        <br>
+        <br>
 
-        
-        </main>
+        <label for="numPizzas">Enter Pizzas Baked</label>
+        <input type="number" id="numPizzas" name="numPizzas">
+        <button onclick="updateChefStats();">Update Stats</button>
+
+        <br>
+        <br>
+        <div id="divToppings"></div>
+    </main>
 
 
-<script src="Table.js">
+</body>
+
+<script src="Pizza Stats.js">
         
      </script>
 
@@ -75,6 +68,7 @@
      <footer>
         <br>
         <br>
+        
         <br>
         <br>
         
@@ -89,5 +83,4 @@
         <br>
 
      </footer>
-</body>
 </html>

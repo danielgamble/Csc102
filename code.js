@@ -25,8 +25,10 @@ function validateForm(){
     // create an error message if the full name has either 1 charachter or more than 20
     if (fullName.length == 1 || fullName.length > 20){
         // the user gets notified of the error but does not get the secret message
-
+    
         divMessage.innerHTML = "Name has too many charachters; Please try again";
+
+        //divMessage.innerHTML = "Bitch!! You know your name isn't that fucking long. Try that mother fucker again!!";
 
     }
 

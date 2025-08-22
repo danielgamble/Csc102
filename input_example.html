@@ -9,6 +9,8 @@
 <body>
 
     <header>
+
+        <h1>What is your name and favorite color?</h1>
        <!-- This is the navigation menu section -->
         <nav>
             <!-- The a tag is the anchor tag - it creates a hyperlink -->
@@ -52,45 +54,24 @@
             <!-- line break to move the next input to the next row
              TODO; better to do this with css -->
             <br>
+            <br>
 
             <label for="txtFavColor">Favorite Color: </label>
             <!-- text input for the user's favorite color -->
             <input type="text" id="txtFavColor" name ="txtFavColor" placeholder="Favorite Color">
             <br>
+            <br>
             <input type="submit" value="Submit">
         </form>
     </main>
 
-    <!-- TODO: move to an external .js file when complete -->
-    <script>
-        // function to validate our form inputs
-        function validateForm(){
-            // get the user's name so we can validate it
-            let fullName = document.getElementById("txtFullName").value;
-
-            // get the user's favorite color so we can validate it
-            let favColor = document.getElementById("txtFavColor").value;
-
-            // shortcut to the message div
-            let divMessage =document.getElementById("divMessage");
-
-            // Pulls up the input into the console
-            console.log("fullName=" + fullName);
-            console.log("favColor=" + favColor);
-
-            // assignment is single equal sign - = - changing value on the left to match the value on the right
-            // equality uses double equal sign - = - checks to see if value on the left hand side equals value on right hand
-            // === is strict equality - the values and the data type have to match
-            // in our if / else if statements we always are checking equality
-            if(fullName.trim() = ""){
-                divMessage.textContent = "Name cannot be blank";
-            }
-
-            // prevent the form from submitting 
-            return false;
-        }
-    </script>
+ 
 </body>
+
+   <!-- TODO: move to an external .js file when complete -->
+  <script src="Input Example.js">
+        
+     </script>
 
 <!-- Add the footer to the bottom of the page -->
      <footer>

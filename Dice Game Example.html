@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+
+    <!-- add a link to our css file -->
+     <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+     <!-- Create a header section -->
+     <header>
+        <!-- This is the navigation menu section -->
+        <nav>
+            <!-- The a tag is the anchor tag - it creates a hyperlink -->
+            <a href="Index.html" >Home</a> &nbsp;
+            <a href="Boards.html">Boards</a> &nbsp;
+            <a href="">Dice Game</a> &nbsp;
+        </nav>
+     </header>
+
+    <!-- Add header text. There should 1 and only 1 h1 tag. -->
+    <h1>Welcome to my CSC102 Dice Game.</h1>
+
+
+    <!-- add a button so the user can start the game when they are ready -->
+     <button onclick="playDiceGame();">Play Dice Game</button>
+
+     <!-- JavaScript code goes between our script tags; don't use HTML tags or CSS styles directly in JavaScript code -->
+     <script>
+        // single line comment
+        /* multiline comment */
+
+        // this function will allow us to play our game
+        function playDiceGame(){
+
+            //you can display helpful messages to the console to track what's going on in the program
+            console.log("playDiceGame function called");
+
+            //set up 2 variables to hold the 2 dice rolls that my game needs to do
+            let die1 = rollDie();
+            let die2 = rollDie();
+
+            console.log("die1=" + die1);
+            console.log("die2=" + die2);
+
+            //add the dice together
+            let sum = die1 + die2;
+
+            console.log("sum=" + sum);
+
+            // if the sum is either 7 or 11 in craps, you lose
+            // make sure to use == in your if statements - that is for equality
+            // if you only use = that will change the value of the variable on the left hand side to 
+            //the value on the right hand side
+            // || means or - we are checking for a sum of 7 or 11
+            if (sum == 7 || sum == 11){
+                // display message that user lost
+                console.log("you lost :(");
+            }
+            // next statement will check to see if we have won
+            // check to see if both numbers are the same 
+            // and then check to see if the numbers are even
+            // die1 % 2 == 0 <== checks if the die when divided by 2, is there a remainder?
+            // if there is a remainder, the number is odd; if not, it's even
+            else if (die1 == die2 && die1 % 2 == 0){
+                // display message that user won
+                console.log("you won :)");
+            }
+            // in any other scenario, the user has tied(not won and not lost)
+            else{
+                console.log("you pushed (you tied)");
+            }
+        }
+
+        // function to simulate the rolling of a 6-sided die
+        function rollDie(){
+
+            // multiply random number between 0 and 1 by 6 so I get my random dice roll
+            let randomNumber = Math.random() * 6;
+
+            // round the number up to the next whole number
+            randomNumber = Math.ceil(randomNumber);
+
+            // return the random number that was generated
+            return randomNumber;
+        }
+     </script>
+
+    <!-- Add the footer to the bottom of the page -->
+     <footer>
+        <!-- <br> creates a new line -->
+        Daniel Gamble   <br>
+        University of Advancing Technology <br>
+        2625 W Baseline Rd. <br>
+        Tempe, AZ 85283
+
+     </footer>
+
+</body>
+</html>
